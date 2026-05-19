@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>For Denaya | Song</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Great+Vibes&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="page scrapbook-page page-song" data-page="song">
+    <main class="scrapbook-stage song-stage">
+      <h1 class="script-title song-title">This song reminds me of you</h1>
+
+      <section class="record-player song-player" aria-label="Song player">
+        <button id="songDisc" class="vinyl-record song-disc" type="button" aria-label="Play Best Part"></button>
+        <article class="song-card">
+          <p class="video-title">Best Part</p>
+          <p class="video-subtitle">From song/BestPart.mp3</p>
+          <button id="songToggle" class="song-play-button" type="button">Play song</button>
+          <div class="song-progress" aria-hidden="true">
+            <span id="songProgress"></span>
+          </div>
+          <audio id="songAudio" src="song/BestPart.mp3" preload="metadata"></audio>
+        </article>
+      </section>
+
+      <span class="music-notes" aria-hidden="true">&#9835; &#9834;</span>
+      <a class="click-here" href="birthday.html" data-flow-link data-transition="cd">Click here</a>
+    </main>
+
+    <script src="js/main.js" defer></script>
+  </body>
+</html>

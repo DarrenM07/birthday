@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>For Denaya | Countdown</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Great+Vibes&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body
+    class="page red-countdown-page"
+    data-page="countdown"
+    data-target-date="2026-05-21T00:00:00+10:00"
+  >
+    <main class="red-countdown-stage">
+      <section class="countdown-card red-countdown-card">
+        <p class="eyebrow">SOMETHING SPECIAL IS COMING</p>
+        <h1 class="countdown-title">UNTIL DENAYA LYDIA'S BIRTHDAY</h1>
+
+        <div class="countdown-grid" aria-live="polite">
+          <div class="time-block">
+            <span id="days" class="time-value">00</span>
+            <span class="time-label">DAYS</span>
+          </div>
+          <span class="separator">:</span>
+          <div class="time-block">
+            <span id="hours" class="time-value">00</span>
+            <span class="time-label">HOURS</span>
+          </div>
+          <span class="separator">:</span>
+          <div class="time-block">
+            <span id="minutes" class="time-value">00</span>
+            <span class="time-label">MIN</span>
+          </div>
+          <span class="separator">:</span>
+          <div class="time-block">
+            <span id="seconds" class="time-value">00</span>
+            <span class="time-label">SEC</span>
+          </div>
+          <span class="separator">:</span>
+          <div class="time-block time-ms">
+            <span id="milliseconds" class="time-value">000</span>
+            <span class="time-label">MS</span>
+          </div>
+        </div>
+
+        <button id="skipCountdown" class="text-link" type="button">Skip countdown <span>&#8594;</span></button>
+      </section>
+    </main>
+
+    <script src="js/main.js" defer></script>
+  </body>
+</html>
