@@ -5642,6 +5642,10 @@ body.no-choice-page {
   transform: rotate(3deg);
 }
 
+.polaroid-wall .polaroid-center {
+  grid-column: 2;
+}
+
 .polaroid-wall img {
   aspect-ratio: 1 / 1;
 }
@@ -5797,6 +5801,12 @@ body.no-choice-page {
   .polaroid-wall {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
+  .polaroid-wall .polaroid-center {
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: calc((100% - clamp(12px, 3vw, 24px)) / 2);
+  }
 }
 
 @media (max-width: 460px) {
@@ -5811,6 +5821,11 @@ body.no-choice-page {
   .floating-photos,
   .polaroid-wall {
     grid-template-columns: 1fr;
+  }
+
+  .polaroid-wall .polaroid-center {
+    grid-column: auto;
+    width: 100%;
   }
 
   .gingham-scene {
